@@ -23,11 +23,12 @@ public class Tabuada {
 
         System.out.println("Tabuada de: " + tabuada); // frase ilustrativa para indicar a tabuada
 
-        for (int i = 1; i <= 10; i = i + 1) { // para: variável i = 0, até i menor ou igual a 10, adicionando 1 ao valor
-                                              // de i a cada loop.
-            System.out.println(tabuada + " x " + i + " = " + (tabuada * i)); // número escolhido pelo usuário "X" o
-                                                                             // valor de i "=" a multiplicação do número
-                                                                             // com o i.
+        // para: variável i = 0, até i menor ou igual a 10, adicionando 1 ao valor de i
+        // a cada loop.
+        for (int i = 1; i <= 10; i = i + 1) {
+            System.out.println(tabuada + " x " + i + " = " + (tabuada * i));
+            // número escolhido pelo usuário "X" o valor de i "=" a multiplicação do número
+            // com o i.
 
         }
 
