@@ -1,0 +1,36 @@
+package loops.Loops;
+
+import java.util.Scanner;
+
+/*
+Desenvolva um gerador de tabuada,
+capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10.
+O usuário deve informar de qual numero ele deseja ver a tabuada.
+A saída deve ser conforme o exemplo abaixo:
+Tabuada de 5:
+5 X 1 = 5
+5 X 2 = 10
+...
+5 X 10 = 50
+*/
+
+public class Tabuada {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in); // Abertura da entrada de fluxo de dados através do teclado
+
+        System.out.println("Tabuada: ");
+        int tabuada = scan.nextInt(); // Entrada de dados, neste caso de um int.
+
+        System.out.println("Tabuada de: " + tabuada); // frase ilustrativa para indicar a tabuada
+
+        for (int i = 1; i <= 10; i = i + 1) { // para: variável i = 0, até i menor ou igual a 10, adicionando 1 ao valor
+                                              // de i a cada loop.
+            System.out.println(tabuada + " x " + i + " = " + (tabuada * i)); // número escolhido pelo usuário "X" o
+                                                                             // valor de i "=" a multiplicação do número
+                                                                             // com o i.
+
+        }
+
+    }
+
+}
